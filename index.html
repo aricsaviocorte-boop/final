@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6e7,#fff5f8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.card{
+    width:90%;
+    max-width:500px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#ff4d88;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#444;
+    margin-bottom:20px;
+}
+
+p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+button{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#ff2d70;
+}
+
+#message{
+    margin-top:25px;
+    color:#ff2d70;
+    font-weight:bold;
+    display:none;
+    animation:fade 1s ease;
+}
+
+
+
+.heart{
+    font-size:60px;
+    animation:beat 1.2s infinite;
+    margin-bottom:20px;
+}
+
+.dennyimage{
+    border: 5px solid #b25b98;
+    border-radius: 8px;
+    padding: 20px;
+    width: auto;
+
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="dennyimage"><img src="denny.png" alt="denny" style="height: 250px; width: auto; border-radius: 10px;"></div>
+
+<h1>Happy Anniversary</h1>
+
+<h2>My Dearest Denny</h2>
+
+<p>
+Another month with you, another month of smiles,
+late-night talks, tiny moments, and countless memories.
+fb sooo muchhh for filling my life with happiness.
+No matter where life takes us,
+I'll always be grateful that I get to call you mine.
+</p>
+
+<button onclick="showMessage()">
+Click Me ❤️
+</button>
+
+<div id="message">
+I love you today, tomorrow, and always and I will always choose you and only you. ❤️
+</div>
+
+</div>
+
+<script>
+function showMessage(){
+    document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
